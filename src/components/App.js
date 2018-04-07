@@ -10,7 +10,9 @@ class App extends Component {
         let orderIntro = ["I don't know all but I can learn all",
             "Always look for good solutions to the problem",
             "Work with the heart"];
-
+        let orderPlace = ["The Milestone Hotel", "Hotel Le Bristol", "The Merrion Hotel"];
+        let orderCity = ["London", "Paris", "Dublin"];
+        let orderCountry = ["English", "France", "Ireland"]
         this.state = {
             widthProcessBar: 0,
             orderBackground: 26,
@@ -19,6 +21,9 @@ class App extends Component {
             indexIntro: 0,
             name: orderName[0],
             intro: orderIntro[0],
+            place: orderPlace[0],
+            city: orderCity[0],
+            country: orderCountry[0]
 
         }
         setInterval(() => {
@@ -40,6 +45,9 @@ class App extends Component {
                     name: orderName[stepCurN],
                     intro: orderIntro[stepcurI],
                     orderBackground: stepcurB,
+                    place: orderPlace[stepcurB - 26],
+                    city: orderCity[stepcurB - 26],
+                    country: orderCountry[stepcurB - 26]
                 });
 
             }
@@ -64,7 +72,11 @@ class App extends Component {
                 <div >
                     <Header />
                 </div>
-                <Footer 
+                <Footer
+                    day={this.state.orderBackground}
+                    place={this.state.place}
+                    city={this.state.city}
+                    country={this.state.country}
                 />
             </div>
         )
