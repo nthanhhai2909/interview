@@ -20,7 +20,4 @@ const Navbar = ({ name, intro, idavatar }) => {
     )
 
 }
-
-
-
 export default Navbar

@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import Slider from './Slider'
 import Navbar from './Navbar'
 import Header from './Header'
+import Footer from './Footer'
 class App extends Component {
-
-
     constructor(props) {
         super(props);
         let orderName = ["T.H IS CEO", "DEFT IS MY LIFE", "HI I'M ADC"];
@@ -55,17 +54,18 @@ class App extends Component {
                 <div >
                     <Slider
                         width={this.state.widthProcessBar} />
-                    <Navbar 
+                    <Navbar
                         name={this.state.name}
                         intro={this.state.intro}
                         idavatar={this.state.idavatar}
                     />
                 </div>
 
-                <div className="container">
+                <div >
                     <Header />
                 </div>
-            <div>sdad</div>
+                <Footer 
+                />
             </div>
         )
     }

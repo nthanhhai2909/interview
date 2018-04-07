@@ -48,3 +48,55 @@
     font-size: 150%;
     color: darkseagreen
 }
+
+.footer{
+    padding-bottom: 50px;
+
+}
+
+.footer .show-day {
+    line-height: 150px;
+    font-size: 150px;
+}
+
+.footer button{
+    background-color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+
+}
+.footer span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .intro-footer {
+    height: 150px;
+    padding-top: 20px;
+}
+.footer #introplace {
+    line-height: 40px;
+    font-size: 40px;
+
+}
+
+.footer #introcountry{
+    line-height: 10px;
+    font-size: 10px;
+}
+
+.footer .read-more{
+    padding-top: 70px;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.footer .read-more hr{
+    background-color: white;
+}
+
