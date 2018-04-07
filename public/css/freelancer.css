@@ -1,0 +1,28 @@
+
+.content {
+    background-color: black;
+    height: 100vh; 
+}
+#myProgress {
+    width: 100%;
+  }
+  
+  #myBar {
+    height: 5px;
+    background-color: white;
+  }
+
+.navbar {
+    color: white;
+    margin-top: 50px;
+}
+
+.navbar .intro {
+
+
+}
+
+.navbar #brand {
+    font-size: 25px;
+    line-height: 25px;  
+}
