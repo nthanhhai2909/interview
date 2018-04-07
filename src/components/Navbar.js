@@ -4,7 +4,7 @@ const Navbar = ({ name, intro, idavatar }) => {
 
     let urlImg = "./image/avatar/" + idavatar + ".jpg"
     return (
-        <div className="navbar-custom">
+        <div className="navbar-custom container">
             <span id="brand" className="text-uppercase ">ARCHY</span>
             <div className="intro">
                 <img src={urlImg} className="rounded-circle" alt="avatar" width="40" />

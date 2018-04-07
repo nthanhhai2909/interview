@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
 const Header = () => (
-    <div>
-        Header
+    <div className="header">
+        <span>←</span>
+        <span>→</span>
     </div>
 )
 
