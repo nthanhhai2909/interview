@@ -1,6 +1,7 @@
 .home{
     transition-property: background;
     transition-duration: 1s;
+    height: 110vh;
 }
 
 .content {
