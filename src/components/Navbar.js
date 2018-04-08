@@ -13,10 +13,8 @@ const Navbar = ({ name, intro, idavatar }) => {
             <div>
                 {intro}
             </div>
-
             <span id="icon">®</span>
         </div>
     )
-
 }
 export default Navbar

@@ -68,7 +68,6 @@ class App extends Component {
                             idavatar={this.state.idavatar}
                         />
                     </div>
-
                     <div >
                         <Header />
                     </div>
