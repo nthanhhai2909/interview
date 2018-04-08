@@ -4,8 +4,8 @@ const Header = () => (
     <div className="header container">
         <div className="row">
             <div className="col-md-12">
-                <span>←</span>
-                <span>→</span>
+                <span>← </span>
+                <span> →</span>
             </div>
 
         </div>

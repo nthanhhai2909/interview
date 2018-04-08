@@ -28,7 +28,6 @@ class App extends Component {
         }
         setInterval(() => {
             let curW = this.state.widthProcessBar;
-
             if (curW == 100) {
                 curW = 0;
                 let stepcurA = this.state.idavatar % 3 + 1;
@@ -57,28 +56,31 @@ class App extends Component {
     render() {
         let urlBackground = 'url(' + './image/background/' + this.state.orderBackground + '.jpg' + ')';
         return (
-            <div className="content"
-                style={{ backgroundImage: urlBackground }}>
-                <div >
-                    <Slider
-                        width={this.state.widthProcessBar} />
-                    <Navbar
-                        name={this.state.name}
-                        intro={this.state.intro}
-                        idavatar={this.state.idavatar}
+            <div className="home" 
+            style={{ backgroundImage: urlBackground }}>
+                <div className="content">
+                    <div >
+                        <Slider
+                            width={this.state.widthProcessBar} />
+                        <Navbar
+                            name={this.state.name}
+                            intro={this.state.intro}
+                            idavatar={this.state.idavatar}
+                        />
+                    </div>
+
+                    <div >
+                        <Header />
+                    </div>
+                    <Footer
+                        day={this.state.orderBackground}
+                        place={this.state.place}
+                        city={this.state.city}
+                        country={this.state.country}
                     />
                 </div>
-
-                <div >
-                    <Header />
-                </div>
-                <Footer
-                    day={this.state.orderBackground}
-                    place={this.state.place}
-                    city={this.state.city}
-                    country={this.state.country}
-                />
             </div>
+
         )
     }
 }

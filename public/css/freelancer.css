@@ -1,3 +1,7 @@
+.home{
+    transition-property: background;
+    transition-duration: 1s;
+}
 
 .content {
     height: 100vh; 
@@ -6,7 +10,9 @@
     color: white;
     flex-wrap: nowrap;
     justify-content: space-between;
+    position: static;
 }
+
 #myProgress {
     width: 100%;
   }
@@ -17,11 +23,9 @@
   }
 
 .navbar-custom {
-  
+    justify-content: space-between;
     margin-top: 50px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
 }
 
 .navbar-custom button{
@@ -30,18 +34,28 @@
     width: 20px;
     border: solid 1px white;
     text-align: center;
-
     vertical-align: middle;
+    transition-property: width, height;
+    transition-duration: 2s;
 }
 
+.navbar-custom .intro{
+    margin-right: 100px;
+}
 
 .navbar-custom .intro img{
     margin-right: 20px;
 }
 
+.navbar-custom  #icon{
+    margin-left: auto;
+    order: 4;
+}
+
 .navbar-custom #brand {
     font-size: 25px;
-    line-height: 25px;  
+    line-height: 25px; 
+    margin-right: 200px; 
 }
 
 .header span{
@@ -51,12 +65,13 @@
 
 .footer{
     padding-bottom: 50px;
-
+    
 }
 
 .footer .show-day {
     line-height: 150px;
     font-size: 150px;
+    
 }
 
 .footer button{
@@ -66,9 +81,10 @@
     padding-right: 20px;
     display: block;
     margin-bottom: 10px;
-    vertical-align: middle;
-
+ 
+    
 }
+
 .footer span{
     display: block;
     margin-bottom: 10px;
